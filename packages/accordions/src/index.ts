@@ -7,3 +7,4 @@
 
 export { Stepper } from './elements/stepper/Stepper';
 export { Accordion } from './elements/accordion/Accordion';
+export { Timeline } from './elements/timeline/Timeline';
