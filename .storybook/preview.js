@@ -47,7 +47,17 @@ const withThemeProvider = (Story, context) => {
   const theme = {
     ...DEFAULT_THEME,
     colors: { ...DEFAULT_THEME.colors, primaryHue: context.globals.primaryHue },
-    rtl
+    rtl,
+    components: {
+      'timeline.item': `
+        &:hover {
+          background: ${DEFAULT_THEME.palette.blue[100]};
+          svg {
+            background: ${DEFAULT_THEME.palette.blue[100]};
+          }
+        }
+      `
+    }
   };
 
   return (
